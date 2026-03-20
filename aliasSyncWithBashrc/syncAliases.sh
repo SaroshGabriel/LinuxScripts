@@ -11,7 +11,7 @@
 # ── Configuration ────────────────────────────────────────────
 BASHRC="$HOME/.bashrc"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ALIASES_CONF="$HOME/LinuxScripts/aliasSyncWithBashrc/aliases.conf"
+ALIASES_CONF="$SCRIPT_DIR/aliases.conf"
 BACKUP_DIR="$HOME/.alias_backups"
 LOG_FILE="$HOME/.alias_sync.log"
 
