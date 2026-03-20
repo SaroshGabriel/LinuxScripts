@@ -233,19 +233,33 @@ _ms_end() {
         echo -e "  ${_MS_GREEN}✅ ${#new_aliases[@]} new alias(es) appended to aliases.conf.${_MS_RESET}"
         _ms_log "Appended ${#new_aliases[@]} new aliases to aliases.conf"
 
-        # Try to git commit + push
+        # Try to git commit + push using encrypted PAT
         echo -e "\n  ${_MS_DIM}Attempting git push to sync aliases.conf...${_MS_RESET}"
         if git -C "$_MS_SCRIPT_DIR" rev-parse --is-inside-work-tree &>/dev/null; then
             git -C "$_MS_SCRIPT_DIR" add aliases.conf
             git -C "$_MS_SCRIPT_DIR" commit -m "MySession: sync new aliases from borrowed machine ($(date '+%Y-%m-%d'))"
-            git -C "$_MS_SCRIPT_DIR" push
-            if [ $? -eq 0 ]; then
-                echo -e "  ${_MS_GREEN}✅ aliases.conf pushed to git.${_MS_RESET}"
-                _ms_log "git push successful"
+
+            local _MS_ENCRYPTED_PAT="U2FsdGVkX1/ucf4OvhXB+26UGYa0lAnT201tjXKp2HPJzCTEMPnYHidDOQHft1eN"
+            echo -e "\n  ${_MS_CYAN}🔑 Enter your passphrase to push to git:${_MS_RESET}"
+            local _MS_PAT
+            _MS_PAT=$(echo "$_MS_ENCRYPTED_PAT" | openssl enc -aes-256-cbc -pbkdf2 -a -d 2>/dev/null)
+
+            if [ -z "$_MS_PAT" ]; then
+                echo -e "  ${_MS_RED}❌ Wrong passphrase. Skipping push.${_MS_RESET}"
+                echo -e "  ${_MS_DIM}   aliases.conf updated locally. Push manually from your own machine.${_MS_RESET}"
+                _ms_log "git push skipped — decryption failed"
             else
-                echo -e "  ${_MS_YELLOW}⚠️  git push failed (no network or auth). aliases.conf updated locally.${_MS_RESET}"
-                echo -e "  ${_MS_DIM}   Push manually later: git push from $_MS_SCRIPT_DIR${_MS_RESET}"
-                _ms_log "git push failed — local update only"
+                git -C "$_MS_SCRIPT_DIR" remote set-url origin "https://${_MS_PAT}@github.com/SaroshGabriel/LinuxScripts.git"
+                git -C "$_MS_SCRIPT_DIR" push
+                if [ $? -eq 0 ]; then
+                    echo -e "  ${_MS_GREEN}✅ aliases.conf pushed to git.${_MS_RESET}"
+                    _ms_log "git push successful"
+                else
+                    echo -e "  ${_MS_YELLOW}⚠️  git push failed. aliases.conf updated locally.${_MS_RESET}"
+                    _ms_log "git push failed — local update only"
+                fi
+                git -C "$_MS_SCRIPT_DIR" remote set-url origin "https://github.com/SaroshGabriel/LinuxScripts.git"
+                unset _MS_PAT
             fi
         else
             echo -e "  ${_MS_YELLOW}⚠️  Not a git repo. aliases.conf updated locally only.${_MS_RESET}"
