@@ -8,7 +8,8 @@
     "exclusive": true,
     "modules-left": [
       "hyprland/workspaces",
-      "hyprland/window"
+      "hyprland/window",
+      "custom/timer"
     ],
     "modules-center": [
       "clock"
@@ -20,9 +21,7 @@
       "memory",
       "temperature",
       "pulseaudio",
-      
       "network#speed",
-      
       "custom/uptime",
       "custom/power"
     ],
@@ -166,6 +165,16 @@
       "interval": 60,
       "format": " {}",
       "tooltip": false
+    },
+    "custom/timer": {
+      "exec": "bash ~/.config/waybar/scripts/timer.sh status",
+      "interval": 1,
+      "return-type": "json",
+      "format": "{}",
+      "on-click": "bash ~/.config/waybar/scripts/timer.sh toggle",
+      "on-click-right": "bash ~/.config/waybar/scripts/timer.sh reset",
+      "on-click-middle": "bash ~/.config/waybar/scripts/timer.sh switch",
+      "tooltip": true
     }
   },
   {
@@ -177,7 +186,8 @@
     "exclusive": true,
     "modules-left": [
       "hyprland/workspaces",
-      "hyprland/window"
+      "hyprland/window",
+      "custom/timer"
     ],
     "modules-center": [
       "clock"
@@ -188,7 +198,6 @@
       "memory",
       "pulseaudio",
       "custom/uptime",
-      
       "network"
     ],
     "hyprland/workspaces": {
@@ -301,6 +310,16 @@
       "interval": 60,
       "format": " {}",
       "tooltip": false
+    },
+    "custom/timer": {
+      "exec": "bash ~/.config/waybar/scripts/timer.sh status",
+      "interval": 1,
+      "return-type": "json",
+      "format": "{}",
+      "on-click": "bash ~/.config/waybar/scripts/timer.sh toggle",
+      "on-click-right": "bash ~/.config/waybar/scripts/timer.sh reset",
+      "on-click-middle": "bash ~/.config/waybar/scripts/timer.sh switch",
+      "tooltip": true
     }
   }
 ]
