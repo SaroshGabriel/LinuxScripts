@@ -1,0 +1,217 @@
+╭─────────────────────────────────────────────────────╮
+│ NIFTY 50 STOCK RESEARCH MONITOR                     │
+│ Automated Fundamental Analysis — India Stock Market │
+│ Data: Yahoo Finance  |  Scoring: Proprietary        │
+╰─────────────────────────────────────────────────────╯
+
+Running full NIFTY 50 scan...
+
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+$TATAMOTORS.NS: possibly delisted; no price data found  (period=1y) (Yahoo error = "No data found, symbol may be delisted")
+  Fetching TRENT           (TRENT.NS)
+──────────────── 🔔 SIGNAL ALERTS — Buy Candidates & Avoid List ────────────────
+
+🟢 BUY CANDIDATES
+  ▶ TCS             Score: 93  P/E:18.57  ROE:48.4%  D/E:0.11  RevGr:9.6%
+  ▶ WIPRO           Score: 86  P/E:16.23  ROE:15.2%  D/E:0.22  RevGr:5.5%
+  ▶ INFOSYS         Score: 83  P/E:18.07  ROE:32.68%  D/E:0.11  RevGr:3.2%
+  ▶ DRREDDY         Score: 83  P/E:18.16  ROE:16.1%  D/E:0.18  RevGr:4.4%
+  ▶ ADANIPORTS      Score: 83  P/E:25.55  ROE:19.41%  D/E:0.82  RevGr:21.9%
+  ▶ HCLTECH         Score: 79  P/E:23.93  ROE:23.19%  D/E:0.1  RevGr:7.4%
+
+🟡 WATCHLIST
+  ▶ HDFCBANK        Score: 68  P/E:18.07  ROE:14.02%
+  ▶ BHARTIARTL      Score: 68  P/E:36.97  ROE:23.12%
+  ▶ ICICIBANK       Score: 66  P/E:18.04  ROE:16.8%
+  ▶ BAJAJ-AUTO      Score: 63  P/E:30.87  ROE:0%
+  ▶ AXISBANK        Score: 61  P/E:16.03  ROE:13.63%
+  ▶ ITC             Score: 58  P/E:18.7  ROE:0%
+  ▶ KOTAKBANK       Score: 58  P/E:19.83  ROE:0%
+  ▶ SBIN            Score: 56  P/E:11.62  ROE:0%
+  ▶ MARUTI          Score: 56  P/E:28.91  ROE:0%
+  ▶ POWERGRID       Score: 55  P/E:19.42  ROE:0%
+  ▶ COALINDIA       Score: 55  P/E:8.96  ROE:0%
+  ▶ HEROMOTOCO      Score: 54  P/E:20.09  ROE:0%
+  ▶ EICHERMOT       Score: 53  P/E:38.05  ROE:0%
+  ▶ HDFCLIFE        Score: 53  P/E:69.05  ROE:11.32%
+  ▶ BPCL            Score: 51  P/E:5.2  ROE:0%
+
+🔴 AVOID
+  ▶ TATAMOTORS      Score: 13
+  ▶ INDUSINDBK      Score: 23
+  ▶ TITAN           Score: 28
+  ▶ JSWSTEEL        Score: 28
+  ▶ LT              Score: 31
+  ▶ GRASIM          Score: 33
+  ▶ ASIANPAINT      Score: 36
+  ▶ BAJAJFINSV      Score: 36
+  ▶ APOLLOHOSP      Score: 38
+  ▶ TRENT           Score: 39
+  ▶ BAJFINANCE      Score: 41
+  ▶ NTPC            Score: 41
+  ▶ BRITANNIA       Score: 41
+  ▶ TATACONSUM      Score: 41
+  ▶ TATASTEEL       Score: 42
+  ▶ HINDUNILVR      Score: 43
+  ▶ M&M             Score: 43
+  ▶ SHRIRAMFIN      Score: 43
+  ▶ ONGC            Score: 46
+  ▶ CIPLA           Score: 46
+  ▶ SBILIFE         Score: 46
+  ▶ TECHM           Score: 47
+  ▶ SUNPHARMA       Score: 48
+  ▶ ULTRACEMCO      Score: 48
+  ▶ NESTLEIND       Score: 48
+  ▶ ADANIENT        Score: 48
+  ▶ DIVISLAB        Score: 48
+  ▶ RELIANCE        Score: 49
+  ▶ HINDALCO        Score: 49
+
+
+✓ Report exported to: nifty_scan_20260411_0537.csv
+╭──────────────────────────────── Scan Summary ────────────────────────────────╮
+│ 🟢 Buy Candidates: 6   🟡 Watchlist: 15   🔴 Avoid: 29   Errors: 0           │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────╮
+│ NIFTY 50 STOCK RESEARCH MONITOR  v2.0                │
+│ Fundamental + ATR-based Price Levels | Yahoo Finance │
+╰──────────────────────────────────────────────────────╯
+
+Running NIFTY 50 scan...
+
+  Fetching TATACHEM
+─────────────────────────────── 🔔 Signal Alerts ───────────────────────────────
+
+🟢 BUY CANDIDATES
+  ▶ TCS             Score:93  P/E:18.57  ROE:48.4%  D/E:0.11  RevGr:9.6%
+  ▶ WIPRO           Score:86  P/E:16.23  ROE:15.2%  D/E:0.22  RevGr:5.5%
+  ▶ INFOSYS         Score:83  P/E:18.07  ROE:32.68%  D/E:0.11  RevGr:3.2%
+  ▶ DRREDDY         Score:83  P/E:18.16  ROE:16.1%  D/E:0.18  RevGr:4.4%
+  ▶ ADANIPORTS      Score:83  P/E:25.55  ROE:19.41%  D/E:0.82  RevGr:21.9%
+  ▶ HCLTECH         Score:79  P/E:23.93  ROE:23.19%  D/E:0.1  RevGr:7.4%
+
+🟡 WATCHLIST
+  ▶ HDFCBANK        Score:68  P/E:18.07  ROE:14.02%
+  ▶ BHARTIARTL      Score:68  P/E:36.97  ROE:23.12%
+  ▶ ICICIBANK       Score:66  P/E:18.04  ROE:16.8%
+  ▶ BAJAJ-AUTO      Score:63  P/E:30.87  ROE:0%
+  ▶ AXISBANK        Score:61  P/E:16.03  ROE:13.63%
+  ▶ ITC             Score:58  P/E:18.7  ROE:0%
+  ▶ KOTAKBANK       Score:58  P/E:19.83  ROE:0%
+  ▶ SBIN            Score:56  P/E:11.62  ROE:0%
+  ▶ MARUTI          Score:56  P/E:28.91  ROE:0%
+  ▶ POWERGRID       Score:55  P/E:19.42  ROE:0%
+  ▶ COALINDIA       Score:55  P/E:8.96  ROE:0%
+  ▶ HEROMOTOCO      Score:54  P/E:20.09  ROE:0%
+  ▶ EICHERMOT       Score:53  P/E:38.05  ROE:0%
+  ▶ HDFCLIFE        Score:53  P/E:69.05  ROE:11.32%
+  ▶ BPCL            Score:51  P/E:5.2  ROE:0%
+
+🔴 AVOID
+  ▶ INDUSINDBK      Score:23
+  ▶ TATACHEM        Score:26
+  ▶ TITAN           Score:28
+  ▶ JSWSTEEL        Score:28
+  ▶ LT              Score:31
+  ▶ GRASIM          Score:33
+  ▶ ASIANPAINT      Score:36
+  ▶ BAJAJFINSV      Score:36
+  ▶ APOLLOHOSP      Score:38
+  ▶ TRENT           Score:39
+  ▶ BAJFINANCE      Score:41
+  ▶ NTPC            Score:41
+  ▶ BRITANNIA       Score:41
+  ▶ TATACONSUM      Score:41
+  ▶ TATASTEEL       Score:42
+  ▶ HINDUNILVR      Score:43
+  ▶ M&M             Score:43
+  ▶ SHRIRAMFIN      Score:43
+  ▶ ONGC            Score:46
+  ▶ CIPLA           Score:46
+  ▶ SBILIFE         Score:46
+  ▶ TECHM           Score:47
+  ▶ SUNPHARMA       Score:48
+  ▶ ULTRACEMCO      Score:48
+  ▶ NESTLEIND       Score:48
+  ▶ DIVISLAB        Score:48
+  ▶ RELIANCE        Score:49
+  ▶ HINDALCO        Score:49
+
+
+✓ Exported → nifty_scan_20260411_0607.csv
+╭──────────────────────────────── Scan Summary ────────────────────────────────╮
+│ 🟢 Buy Candidates: 6   🟡 Watchlist: 15   🔴 Avoid: 28   Errors: 0           │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭────────────────────────────────────────────────────────────────────╮
+│ NIFTY 50 STOCK RESEARCH MONITOR  v2.0                              │
+│ Fundamental + ATR Price Levels + AI News Sentiment | Yahoo Finance │
+╰────────────────────────────────────────────────────────────────────╯
+
+Running NIFTY 50 scan...
+
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+$TATAMOTORS.NS: possibly delisted; no price data found  (period=1y) (Yahoo error = "No data found, symbol may be delisted")
+  Fetching TRENT
+─────────────────────────────── 🔔 Signal Alerts ───────────────────────────────
+
+🟢 BUY CANDIDATES
+  ▶ TCS             Score:93  P/E:18.57  ROE:48.4%  D/E:0.11  RevGr:9.6%
+  ▶ WIPRO           Score:86  P/E:16.23  ROE:15.2%  D/E:0.22  RevGr:5.5%
+  ▶ INFOSYS         Score:83  P/E:18.07  ROE:32.68%  D/E:0.11  RevGr:3.2%
+  ▶ DRREDDY         Score:83  P/E:18.16  ROE:16.1%  D/E:0.18  RevGr:4.4%
+  ▶ ADANIPORTS      Score:83  P/E:25.55  ROE:19.41%  D/E:0.82  RevGr:21.9%
+  ▶ HCLTECH         Score:79  P/E:23.93  ROE:23.19%  D/E:0.1  RevGr:7.4%
+
+🟡 WATCHLIST
+  ▶ HDFCBANK        Score:68  P/E:18.07  ROE:14.02%
+  ▶ BHARTIARTL      Score:68  P/E:36.97  ROE:23.12%
+  ▶ ICICIBANK       Score:66  P/E:18.04  ROE:16.8%
+  ▶ BAJAJ-AUTO      Score:63  P/E:30.87  ROE:0%
+  ▶ AXISBANK        Score:61  P/E:16.03  ROE:13.63%
+  ▶ ITC             Score:58  P/E:18.7  ROE:0%
+  ▶ KOTAKBANK       Score:58  P/E:19.83  ROE:0%
+  ▶ SBIN            Score:56  P/E:11.62  ROE:0%
+  ▶ MARUTI          Score:56  P/E:28.91  ROE:0%
+  ▶ POWERGRID       Score:55  P/E:19.42  ROE:0%
+  ▶ COALINDIA       Score:55  P/E:8.96  ROE:0%
+  ▶ HEROMOTOCO      Score:54  P/E:20.09  ROE:0%
+  ▶ EICHERMOT       Score:53  P/E:38.05  ROE:0%
+  ▶ HDFCLIFE        Score:53  P/E:69.05  ROE:11.32%
+  ▶ BPCL            Score:51  P/E:5.2  ROE:0%
+
+🔴 AVOID
+  ▶ TATAMOTORS      Score:13
+  ▶ INDUSINDBK      Score:23
+  ▶ TITAN           Score:28
+  ▶ JSWSTEEL        Score:28
+  ▶ LT              Score:31
+  ▶ GRASIM          Score:33
+  ▶ ASIANPAINT      Score:36
+  ▶ BAJAJFINSV      Score:36
+  ▶ APOLLOHOSP      Score:38
+  ▶ TRENT           Score:39
+  ▶ BAJFINANCE      Score:41
+  ▶ NTPC            Score:41
+  ▶ BRITANNIA       Score:41
+  ▶ TATACONSUM      Score:41
+  ▶ TATASTEEL       Score:42
+  ▶ HINDUNILVR      Score:43
+  ▶ M&M             Score:43
+  ▶ SHRIRAMFIN      Score:43
+  ▶ ONGC            Score:46
+  ▶ CIPLA           Score:46
+  ▶ SBILIFE         Score:46
+  ▶ TECHM           Score:47
+  ▶ SUNPHARMA       Score:48
+  ▶ ULTRACEMCO      Score:48
+  ▶ NESTLEIND       Score:48
+  ▶ ADANIENT        Score:48
+  ▶ DIVISLAB        Score:48
+  ▶ RELIANCE        Score:49
+  ▶ HINDALCO        Score:49
+
+
+✓ Exported → nifty_scan_20260411_0638.csv
+╭──────────────────────────────── Scan Summary ────────────────────────────────╮
+│ 🟢 Buy Candidates: 6   🟡 Watchlist: 15   🔴 Avoid: 29   Errors: 0           │
+╰──────────────────────────────────────────────────────────────────────────────╯
