@@ -252,7 +252,152 @@ SECTORS = {
         "BAJAJFINSV":   "BAJAJFINSV.NS",
         "GODIGIT":      "GODIGIT.NS",
     },
+    "AIRLINES": {
+        "INDIGO":       "INDIGO.NS",
+        "SPICEJET":     "SPICEJET.NS",
+        "GMRINFRA":     "GMRINFRA.NS",
+        "BLUEDART":     "BLUEDART.NS",
+        "IRCTC":        "IRCTC.NS",
+        "THOMASCOOK":   "THOMASCOOK.NS",
+        "MAHINDRA":     "M&MFIN.NS",
+        "INTERGLOBE":   "INTERGLOBE.NS",
+        "GIPCL":        "GIPCL.NS",
+        "AIAENG":       "AIAENG.NS",
+    },
+    "POWER": {
+        "TATAPOWER":    "TATAPOWER.NS",
+        "ADANIGREEN":   "ADANIGREEN.NS",
+        "JSWEN":        "JSWENERGY.NS",
+        "TORNTPOWER":   "TORNTPOWER.NS",
+        "CESC":         "CESC.NS",
+        "NHPC":         "NHPC.NS",
+        "SJVN":         "SJVN.NS",
+        "INDIAGRID":    "INDIAGRID.NS",
+        "POWERINDIA":   "POWERINDIA.NS",
+        "RPOWER":       "RPOWER.NS",
+    },
+    "NBFC": {
+        "MUTHOOTFIN":   "MUTHOOTFIN.NS",
+        "MANAPPURAM":   "MANAPPURAM.NS",
+        "CHOLAFIN":     "CHOLAFIN.NS",
+        "LTFH":         "LTFH.NS",
+        "POONAWALLA":   "POONAWALLA.NS",
+        "SUNDARMFIN":   "SUNDARMFIN.NS",
+        "MASFIN":       "MASFIN.NS",
+        "AAVAS":        "AAVAS.NS",
+        "HOMEFIRST":    "HOMEFIRST.NS",
+        "CREDITACC":    "CREDITACC.NS",
+    },
+    "AGRI": {
+        "CHAMBLFERT":   "CHAMBLFERT.NS",
+        "COROMANDEL":   "COROMANDEL.NS",
+        "UPL":          "UPL.NS",
+        "PIIND":        "PIIND.NS",
+        "DHANUKA":      "DHANUKA.NS",
+        "RALLIS":       "RALLIS.NS",
+        "BAYER":        "BAYERCROP.NS",
+        "KSCL":         "KSCL.NS",
+        "ASTERDM":      "ASTERDM.NS",
+        "GODREJAGRO":   "GODREJAGRO.NS",
+    },
+    "LOGISTICS": {
+        "DELHIVERY":    "DELHIVERY.NS",
+        "BLUEDART":     "BLUEDART.NS",
+        "TCIEXPRESS":   "TCIEXPRESS.NS",
+        "VRLLOG":       "VRLLOG.NS",
+        "MAHLOG":       "MAHLOG.NS",
+        "GATI":         "GATI.NS",
+        "ALLCARGO":     "ALLCARGO.NS",
+        "XPRESSBEES":   "XPRESSBEES.NS",
+        "AEGISLOG":     "AEGISLOG.NS",
+        "TVSSCS":       "TVSSCS.NS",
+    },
+    "MEDIA": {
+        "ZEEL":         "ZEEL.NS",
+        "SUNTV":        "SUNTV.NS",
+        "PVRINOX":      "PVRINOX.NS",
+        "TIPSINDLTD":   "TIPSINDLTD.NS",
+        "NAZARA":       "NAZARA.NS",
+        "NETWORK18":    "NETWORK18.NS",
+        "TV18BRDCST":   "TV18BRDCST.NS",
+        "SAREGAMA":     "SAREGAMA.NS",
+        "BALAJITELE":   "BALAJITELE.NS",
+        "DIOCL":        "DIOCL.NS",
+    },
+    "HOSPITALITY": {
+        "INDHOTEL":     "INDHOTEL.NS",
+        "LEMONTREE":    "LEMONTREE.NS",
+        "EIHOTEL":      "EIHOTEL.NS",
+        "CHALET":       "CHALET.NS",
+        "MAHINDRAHOLIDAY": "MHRIL.NS",
+        "ITCHOTELS":    "ITCHOTELS.NS",
+        "KAMAT":        "KAMAT.NS",
+        "TAJGVK":       "TAJGVK.NS",
+        "WONDERLA":     "WONDERLA.NS",
+        "DEVYANI":      "DEVYANI.NS",
+    },
+    "TEXTILES": {
+        "VARDHMAN":     "VTL.NS",
+        "ARVIND":       "ARVIND.NS",
+        "PAGEIND":      "PAGEIND.NS",
+        "WELSPUNIND":   "WELSPUNIND.NS",
+        "KPRMILL":      "KPRMILL.NS",
+        "RAYMOND":      "RAYMOND.NS",
+        "TRIDENT":      "TRIDENT.NS",
+        "GRASIM":       "GRASIM.NS",
+        "NITIN":        "NITINSPIN.NS",
+        "ALOKTEXT":     "ALOKTEXT.NS",
+    },
+    "JEWELLERY": {
+        "KALYANKJIL":   "KALYANKJIL.NS",
+        "RAJESHEXPO":   "RAJESHEXPO.NS",
+        "SENCO":        "SENCO.NS",
+        "PCJEWELLER":   "PCJEWELLER.NS",
+        "GOLDIAM":      "GOLDIAM.NS",
+        "THANGAMAYL":   "THANGAMAYL.NS",
+        "TITAN":        "TITAN.NS",
+        "VAIBHAVGBL":   "VAIBHAVGBL.NS",
+        "KDDL":         "KDDL.NS",
+        "RENAISSANCE":  "RENAISSANCEJEWELRY.NS",
+    },
+    "SUGAR": {
+        "BALRAMCHIN":   "BALRAMCHIN.NS",
+        "DHAMPUR":      "DHAMPURSUG.NS",
+        "TRIVENI":      "TRIVENI.NS",
+        "RENUKA":       "RENUKA.NS",
+        "DWARIKESH":    "DWARIKESH.NS",
+        "UTTAMSUGAR":   "UTTAMSUGAR.NS",
+        "EIDPARRY":     "EIDPARRY.NS",
+        "DCHL":         "DCHL.NS",
+        "BAJAJHIND":    "BAJAJHIND.NS",
+        "SHREERENUKA":  "SHREERENUKA.NS",
+    },
+    "PAPER": {
+        "JKPAPER":      "JKPAPER.NS",
+        "TNPL":         "TNPL.NS",
+        "WESTCOAST":    "WESTCOAST.NS",
+        "ANDPAPER":     "ANDPAPER.NS",
+        "NRCL":         "NRCL.NS",
+        "SAPPHIRE":     "SAPPHIRE.NS",
+        "TAMILNADUPAPER": "TNPL.NS",
+        "SESHASAYEE":   "SESHASAYEE.NS",
+        "STARPAPER":    "STARPAPER.NS",
+        "EMAMIPAPER":   "EMAMIPAPER.NS",
+    },
+    "SHIPPING": {
+        "GESHIP":       "GESHIP.NS",
+        "SCI":          "SCI.NS",
+        "SEAMECLTD":    "SEAMECLTD.NS",
+        "SHREYAS":      "SHREYAS.NS",
+        "ESCOSHIP":     "ESCOSHIP.NS",
+        "MPSLTD":       "MPSLTD.NS",
+        "TOLANI":       "TOLANI.NS",
+        "GREATSHIP":    "GREATSHIP.NS",
+        "FIVESTAR":     "FIVESTAR.NS",
+        "TRANSSHIP":    "TRANSSHIP.NS",
+    },
 }
+
 # ─────────────────────────────────────────────────────────────
 # US STOCKS
 # ─────────────────────────────────────────────────────────────
@@ -1075,8 +1220,9 @@ def main():
     ap.add_argument("--levels",      action="store_true",  help="Price levels for all stocks")
     ap.add_argument("--export",      action="store_true",  help="Export to CSV")
     ap.add_argument("--top",         type=int,             help="Top N stocks by score")
-    ap.add_argument("--sectorscan",  action="store_true",  help="10 stocks × 10 sectors")
+    ap.add_argument("--sectorscan",  action="store_true",  help="10 stocks × 15 sectors")
     ap.add_argument("--sector",      type=str,             help="Single sector e.g. IT BANKING")
+    ap.add_argument("--listsectors", action="store_true",  help="List all available sectors and their stocks")
     ap.add_argument("--crypto",      action="store_true",  help="Crypto monitor")
     ap.add_argument("--metals",      action="store_true",  help="Gold & Silver monitor")
     ap.add_argument("--forex",       action="store_true",  help="Top 10 forex vs USD")
@@ -1090,6 +1236,23 @@ def main():
         border_style="bright_blue", expand=False))
 
     # ── Single stock deep dive ───────────────────────────────
+    # ── List all sectors ─────────────────────────────────────
+    if args.listsectors:
+        tbl = Table(
+            title="📋 Available Sectors & Stocks",
+            box=box.ROUNDED, show_lines=True,
+            header_style="bold cyan", title_style="bold white on dark_blue",
+        )
+        tbl.add_column("Sector",  style="bold green", width=14)
+        tbl.add_column("Stocks",  width=80)
+        for sec, stocks in SECTORS.items():
+            tbl.add_row(sec, "  ".join(stocks.keys()))
+        console.print(tbl)
+        console.print(f"\n[dim]Total: {len(SECTORS)} sectors, "
+                      f"{sum(len(v) for v in SECTORS.values())} stocks[/dim]\n"
+                      f"[dim]Usage: nifty --sector DEFENCE[/dim]")
+        return
+
     if args.stock:
         name = args.stock.upper()
         sym  = NIFTY50.get(name)
