@@ -254,13 +254,13 @@ SECTORS = {
     },
     "AIRLINES": {
         "INDIGO":       "INDIGO.NS",
-        "SPICEJET":     "SPICEJET.NS",
-        "GMRINFRA":     "GMRINFRA.NS",
+        "SPICEJET":     "SPICEJET.BO",
+        "GMRINFRA":     "GMRAIRPORT.NS",
         "BLUEDART":     "BLUEDART.NS",
         "IRCTC":        "IRCTC.NS",
         "THOMASCOOK":   "THOMASCOOK.NS",
         "MAHINDRA":     "M&MFIN.NS",
-        "INTERGLOBE":   "INTERGLOBE.NS",
+        "INTERGLOBE":   "INDIGO.NS",
         "GIPCL":        "GIPCL.NS",
         "AIAENG":       "AIAENG.NS",
     },
@@ -272,7 +272,7 @@ SECTORS = {
         "CESC":         "CESC.NS",
         "NHPC":         "NHPC.NS",
         "SJVN":         "SJVN.NS",
-        "INDIAGRID":    "INDIAGRID.NS",
+        "INDIAGRID":    "INDIAGRID.BO",
         "POWERINDIA":   "POWERINDIA.NS",
         "RPOWER":       "RPOWER.NS",
     },
@@ -280,7 +280,7 @@ SECTORS = {
         "MUTHOOTFIN":   "MUTHOOTFIN.NS",
         "MANAPPURAM":   "MANAPPURAM.NS",
         "CHOLAFIN":     "CHOLAFIN.NS",
-        "LTFH":         "LTFH.NS",
+        "LTFH":         "LTFINANCE.NS",
         "POONAWALLA":   "POONAWALLA.NS",
         "SUNDARMFIN":   "SUNDARMFIN.NS",
         "MASFIN":       "MASFIN.NS",
@@ -303,12 +303,12 @@ SECTORS = {
     "LOGISTICS": {
         "DELHIVERY":    "DELHIVERY.NS",
         "BLUEDART":     "BLUEDART.NS",
-        "TCIEXPRESS":   "TCIEXPRESS.NS",
+        "TCIEXPRESS":   "TCIEXP.NS",
         "VRLLOG":       "VRLLOG.NS",
         "MAHLOG":       "MAHLOG.NS",
-        "GATI":         "GATI.NS",
+        "GATI":         "GATI.BO",
         "ALLCARGO":     "ALLCARGO.NS",
-        "XPRESSBEES":   "XPRESSBEES.NS",
+        "XPRESSBEES":   "MAHLOG.NS",
         "AEGISLOG":     "AEGISLOG.NS",
         "TVSSCS":       "TVSSCS.NS",
     },
@@ -316,13 +316,13 @@ SECTORS = {
         "ZEEL":         "ZEEL.NS",
         "SUNTV":        "SUNTV.NS",
         "PVRINOX":      "PVRINOX.NS",
-        "TIPSINDLTD":   "TIPSINDLTD.NS",
+        "TIPSINDLTD":   "TIPSFILMS.NS",
         "NAZARA":       "NAZARA.NS",
         "NETWORK18":    "NETWORK18.NS",
-        "TV18BRDCST":   "TV18BRDCST.NS",
+        "TV18BRDCST":   "TV18BRDCST.BO",
         "SAREGAMA":     "SAREGAMA.NS",
         "BALAJITELE":   "BALAJITELE.NS",
-        "DIOCL":        "DIOCL.NS",
+        "DIOCL":        "NETWORK18.NS",
     },
     "HOSPITALITY": {
         "INDHOTEL":     "INDHOTEL.NS",
@@ -331,7 +331,7 @@ SECTORS = {
         "CHALET":       "CHALET.NS",
         "MAHINDRAHOLIDAY": "MHRIL.NS",
         "ITCHOTELS":    "ITCHOTELS.NS",
-        "KAMAT":        "KAMAT.NS",
+        "KAMAT":        "KAMATHOTEL.NS",
         "TAJGVK":       "TAJGVK.NS",
         "WONDERLA":     "WONDERLA.NS",
         "DEVYANI":      "DEVYANI.NS",
@@ -340,13 +340,13 @@ SECTORS = {
         "VARDHMAN":     "VTL.NS",
         "ARVIND":       "ARVIND.NS",
         "PAGEIND":      "PAGEIND.NS",
-        "WELSPUNIND":   "WELSPUNIND.NS",
+        "WELSPUNIND":   "WELSPUNLIV.NS",
         "KPRMILL":      "KPRMILL.NS",
         "RAYMOND":      "RAYMOND.NS",
         "TRIDENT":      "TRIDENT.NS",
         "GRASIM":       "GRASIM.NS",
         "NITIN":        "NITINSPIN.NS",
-        "ALOKTEXT":     "ALOKTEXT.NS",
+        "ALOKTEXT":     "ALOKINDS.NS",
     },
     "JEWELLERY": {
         "KALYANKJIL":   "KALYANKJIL.NS",
@@ -358,43 +358,43 @@ SECTORS = {
         "TITAN":        "TITAN.NS",
         "VAIBHAVGBL":   "VAIBHAVGBL.NS",
         "KDDL":         "KDDL.NS",
-        "RENAISSANCE":  "RENAISSANCEJEWELRY.NS",
+        "RENAISSANCE":  "RJL.NS",
     },
     "SUGAR": {
         "BALRAMCHIN":   "BALRAMCHIN.NS",
         "DHAMPUR":      "DHAMPURSUG.NS",
         "TRIVENI":      "TRIVENI.NS",
         "RENUKA":       "RENUKA.NS",
-        "DWARIKESH":    "DWARIKESH.NS",
+        "DWARIKESH":    "DWARKESH.NS",
         "UTTAMSUGAR":   "UTTAMSUGAR.NS",
         "EIDPARRY":     "EIDPARRY.NS",
-        "DCHL":         "DCHL.NS",
+        "DCHL":         "DCBL.NS",
         "BAJAJHIND":    "BAJAJHIND.NS",
-        "SHREERENUKA":  "SHREERENUKA.NS",
+        "SHREERENUKA":  "RENUKA.NS",
     },
     "PAPER": {
         "JKPAPER":      "JKPAPER.NS",
         "TNPL":         "TNPL.NS",
-        "WESTCOAST":    "WESTCOAST.NS",
-        "ANDPAPER":     "ANDPAPER.NS",
-        "NRCL":         "NRCL.NS",
+        "WESTCOAST":    "WSTCSTPAPR.NS",
+        "ANDPAPER":     "ANDHRPAPER.NS",
+        "NRCL":         "NRBBEARING.NS",
         "SAPPHIRE":     "SAPPHIRE.NS",
         "TAMILNADUPAPER": "TNPL.NS",
-        "SESHASAYEE":   "SESHASAYEE.NS",
+        "SESHASAYEE":   "SESHAASAYE.NS",
         "STARPAPER":    "STARPAPER.NS",
-        "EMAMIPAPER":   "EMAMIPAPER.NS",
+        "EMAMIPAPER":   "EMAMIPAP.NS",
     },
     "SHIPPING": {
         "GESHIP":       "GESHIP.NS",
         "SCI":          "SCI.NS",
         "SEAMECLTD":    "SEAMECLTD.NS",
-        "SHREYAS":      "SHREYAS.NS",
-        "ESCOSHIP":     "ESCOSHIP.NS",
         "MPSLTD":       "MPSLTD.NS",
-        "TOLANI":       "TOLANI.NS",
-        "GREATSHIP":    "GREATSHIP.NS",
         "FIVESTAR":     "FIVESTAR.NS",
-        "TRANSSHIP":    "TRANSSHIP.NS",
+        "ESABINDIA":    "ESABINDIA.NS",
+        "COCHINSHIP":   "COCHINSHIP.NS",
+        "GRSE":         "GRSE.NS",
+        "MAZDOCK":      "MAZDOCK.NS",
+        "DREDGECORP":   "DREDGECORP.NS",
     },
 }
 
@@ -426,12 +426,12 @@ CRYPTO = {
 # METALS TICKERS
 # ─────────────────────────────────────────────────────────────
 METALS = {
-    "Gold (USD)":    "GC=F",
-    "Silver (USD)":  "SI=F",
-    "Gold (INR)":    "GOLD.NS",
-    "Silver (INR)":  "SILVERMIC.NS",
-    "Platinum":      "PL=F",
-    "Copper":        "HG=F",
+    "Gold (USD/oz)":    "GC=F",
+    "Silver (USD/oz)":  "SI=F",
+    "Gold (INR/10g)":   "GOLDBEES.NS",
+    "Silver (INR/kg)":  "SILVERBEES.NS",
+    "Platinum":         "PL=F",
+    "Copper":           "HG=F",
 }
 
 # ─────────────────────────────────────────────────────────────
@@ -578,101 +578,230 @@ def fetch_price_levels(symbol: str) -> dict:
 # ─────────────────────────────────────────────────────────────
 # 3. CRYPTO DATA FETCH
 # ─────────────────────────────────────────────────────────────
+# ─────────────────────────────────────────────────────────────
+# TWELVE DATA HELPER
+# Primary source for: crypto, forex, metals, US stocks
+# Falls back to Yahoo Finance if key missing or call fails
+# Rate limit: 8 calls/min, 800/day on free tier
+# ─────────────────────────────────────────────────────────────
+import urllib.request as _urlreq
+import json as _json
+
+def _td_key() -> str:
+    """Load Twelve Data API key from config file."""
+    import os
+    path = os.path.expanduser("~/.config/stock_monitor/twelvedata_key")
+    if os.path.exists(path):
+        with open(path) as f:
+            return f.read().strip()
+    return ""
+
+def _td_get(endpoint: str, params: dict) -> dict:
+    """Make a Twelve Data API call. Returns parsed JSON or raises."""
+    key = _td_key()
+    if not key:
+        raise ValueError("No Twelve Data key")
+    params["apikey"] = key
+    qs = "&".join(f"{k}={v}" for k, v in params.items())
+    url = f"https://api.twelvedata.com/{endpoint}?{qs}"
+    req = _urlreq.Request(url, headers={"User-Agent": "StockMonitor/3.0"})
+    with _urlreq.urlopen(req, timeout=10) as r:
+        return _json.loads(r.read())
+
+def _td_timeseries(symbol: str, interval: str = "1day",
+                   outputsize: int = 365) -> pd.DataFrame:
+    """Fetch OHLCV time series from Twelve Data. Returns DataFrame."""
+    data = _td_get("time_series", {
+        "symbol": symbol,
+        "interval": interval,
+        "outputsize": outputsize,
+        "format": "JSON",
+    })
+    if data.get("status") == "error" or "values" not in data:
+        raise ValueError(data.get("message", "No data"))
+    df = pd.DataFrame(data["values"])
+    df["datetime"] = pd.to_datetime(df["datetime"])
+    df = df.sort_values("datetime").reset_index(drop=True)
+    for col in ["open","high","low","close"]:
+        df[col] = df[col].astype(float)
+    return df
+
+def _td_quote(symbol: str) -> dict:
+    """Fetch real-time quote from Twelve Data."""
+    data = _td_get("quote", {"symbol": symbol})
+    if data.get("status") == "error":
+        raise ValueError(data.get("message", "No quote"))
+    return data
+
+def _calc_returns_from_df(df: pd.DataFrame) -> tuple:
+    """Calculate 1d/7d/30d/1y returns from a close series DataFrame."""
+    cl = df["close"]
+    cp = float(cl.iloc[-1])
+    p_1d  = float(cl.iloc[-2])  if len(cl) >= 2  else cp
+    p_7d  = float(cl.iloc[-8])  if len(cl) >= 8  else cp
+    p_30d = float(cl.iloc[-31]) if len(cl) >= 31 else cp
+    p_1y  = float(cl.iloc[0])
+    def r(a, b): return round((a-b)/b*100, 2) if b else 0
+    return cp, r(cp,p_1d), r(cp,p_7d), r(cp,p_30d), r(cp,p_1y)
+
+def _calc_52w(df: pd.DataFrame) -> tuple:
+    w52h = float(df["high"].max())
+    w52l = float(df["low"].min())
+    cp   = float(df["close"].iloc[-1])
+    rng  = round((cp-w52l)/(w52h-w52l)*100,1) if (w52h-w52l)>0 else 50
+    return w52h, w52l, rng
+
+def _calc_sma(df: pd.DataFrame, period: int) -> float | None:
+    cl = df["close"]
+    if len(cl) >= period:
+        return float(cl.rolling(period).mean().iloc[-1])
+    return None
+
+
+# ─────────────────────────────────────────────────────────────
+# 3. CRYPTO DATA FETCH  — Twelve Data primary, Yahoo fallback
+# ─────────────────────────────────────────────────────────────
 def fetch_crypto(symbol: str, name: str) -> dict:
+    # ── Try Twelve Data first ──────────────────────────────
+    td_symbol = symbol.replace("-USD", "/USD")  # BTC-USD → BTC/USD
     try:
-        tk   = yf.Ticker(symbol)
-        info = tk.info
-        hist = tk.history(period="1y")
-        if len(hist) < 2:
-            return dict(name=name, ticker=symbol, error="No data")
-
-        cp     = float(hist["Close"].iloc[-1])
-        p_7d   = float(hist["Close"].iloc[-8])  if len(hist)>=8  else cp
-        p_30d  = float(hist["Close"].iloc[-31]) if len(hist)>=31 else cp
-        p_1y   = float(hist["Close"].iloc[0])
-
-        ret_7d  = round((cp - p_7d)  / p_7d  * 100, 2)
-        ret_30d = round((cp - p_30d) / p_30d * 100, 2)
-        ret_1y  = round((cp - p_1y)  / p_1y  * 100, 2)
-
-        w52h = float(hist["High"].max())
-        w52l = float(hist["Low"].min())
-        rng_pct = round((cp-w52l)/(w52h-w52l)*100,1) if (w52h-w52l)>0 else 50
-
-        mktcap = info.get("marketCap", 0)
-        vol24h = info.get("volume24Hr") or info.get("regularMarketVolume", 0)
-
-        # ATR for volatility
-        pc  = hist["Close"].shift(1)
-        tr  = pd.concat([hist["High"]-hist["Low"],
-                         (hist["High"]-pc).abs(),
-                         (hist["Low"]-pc).abs()], axis=1).max(axis=1)
+        df  = _td_timeseries(td_symbol, outputsize=400)
+        q   = _td_quote(td_symbol)
+        cp, r1d, r7d, r30d, r1y = _calc_returns_from_df(df)
+        w52h, w52l, rng_pct = _calc_52w(df)
+        mktcap = float(q.get("market_cap") or 0)
+        vol24h = float(q.get("volume") or 0)
+        cl = df["close"]
+        pc = cl.shift(1)
+        tr = pd.concat([df["high"]-df["low"],
+                        (df["high"]-pc).abs(),
+                        (df["low"] -pc).abs()], axis=1).max(axis=1)
         atr = float(tr.rolling(14).mean().iloc[-1])
         volatility = round(atr/cp*100, 2)
+        source = "TwelveData (real-time)"
+    except Exception:
+        # ── Fall back to Yahoo Finance ─────────────────────
+        try:
+            tk   = yf.Ticker(symbol)
+            hist = tk.history(period="1y")
+            info = tk.info
+            if len(hist) < 2:
+                return dict(name=name, ticker=symbol, error="No data")
+            cp     = float(hist["Close"].iloc[-1])
+            p_7d   = float(hist["Close"].iloc[-8])  if len(hist)>=8  else cp
+            p_30d  = float(hist["Close"].iloc[-31]) if len(hist)>=31 else cp
+            p_1y   = float(hist["Close"].iloc[0])
+            r7d  = round((cp-p_7d) /p_7d *100,2)
+            r30d = round((cp-p_30d)/p_30d*100,2)
+            r1y  = round((cp-p_1y) /p_1y *100,2)
+            r1d  = 0
+            w52h = float(hist["High"].max()); w52l = float(hist["Low"].min())
+            rng_pct = round((cp-w52l)/(w52h-w52l)*100,1) if (w52h-w52l)>0 else 50
+            mktcap = info.get("marketCap",0) or 0
+            vol24h = info.get("volume24Hr") or info.get("regularMarketVolume",0) or 0
+            pc  = hist["Close"].shift(1)
+            tr  = pd.concat([hist["High"]-hist["Low"],
+                             (hist["High"]-pc).abs(),
+                             (hist["Low"] -pc).abs()],axis=1).max(axis=1)
+            atr = float(tr.rolling(14).mean().iloc[-1])
+            volatility = round(atr/cp*100,2)
+            source = "Yahoo (15min delay)"
+        except Exception as e:
+            return dict(name=name, ticker=symbol, error=str(e)[:100])
 
-        # Simple momentum score
-        score = 50
-        if ret_7d  > 5:  score += 10
-        elif ret_7d < -5: score -= 10
-        if ret_30d > 10: score += 15
-        elif ret_30d < -10: score -= 15
-        if ret_1y  > 50: score += 15
-        elif ret_1y < -30: score -= 15
-        if rng_pct < 30: score += 10  # near 52W low = opportunity
-        elif rng_pct > 80: score -= 10
-        score = max(0, min(100, score))
+    score = 50
+    if r7d  >  5: score += 10
+    elif r7d < -5: score -= 10
+    if r30d > 10: score += 15
+    elif r30d < -10: score -= 15
+    if r1y  > 50: score += 15
+    elif r1y < -30: score -= 15
+    if rng_pct < 30: score += 10
+    elif rng_pct > 80: score -= 10
+    score = max(0, min(100, score))
 
-        return dict(
-            name=name, ticker=symbol, error=None,
-            price=round(cp, 6) if cp < 1 else round(cp, 2),
-            mktcap_b=round(mktcap/1e9, 2) if mktcap else None,
-            vol24h_b=round(vol24h/1e9, 2) if vol24h else None,
-            ret_7d=ret_7d, ret_30d=ret_30d, ret_1y=ret_1y,
-            w52h=round(w52h,6) if cp<1 else round(w52h,2),
-            w52l=round(w52l,6) if cp<1 else round(w52l,2),
-            rng_pct=rng_pct,
-            volatility=volatility,
-            atr=round(atr,6) if cp<1 else round(atr,2),
-            score=score,
-        )
-    except Exception as e:
-        return dict(name=name, ticker=symbol, error=str(e)[:100])
+    return dict(
+        name=name, ticker=symbol, error=None, source=source,
+        price=round(cp,6) if cp<1 else round(cp,2),
+        mktcap_b=round(mktcap/1e9,2) if mktcap else None,
+        vol24h_b=round(vol24h/1e9,2) if vol24h else None,
+        ret_7d=r7d, ret_30d=r30d, ret_1y=r1y,
+        w52h=round(w52h,6) if cp<1 else round(w52h,2),
+        w52l=round(w52l,6) if cp<1 else round(w52l,2),
+        rng_pct=rng_pct, volatility=volatility,
+        atr=round(atr,6) if cp<1 else round(atr,2),
+        score=score,
+    )
 
 
 # ─────────────────────────────────────────────────────────────
-# 4. METALS DATA FETCH
+# 4. METALS DATA FETCH  — Twelve Data primary, Yahoo fallback
 # ─────────────────────────────────────────────────────────────
 def fetch_metal(symbol: str, name: str) -> dict:
+    # Twelve Data symbols for metals futures
+    # Twelve Data symbol + unit conversion factor
+    # 1 troy oz = 31.1035g, so per 10g = price / 3.11035
+    # XAG/INR per troy oz → per kg = price * (1000/31.1035)
+    TD_METALS = {
+        "GC=F":          ("XAU/USD", 1.0),
+        "SI=F":          ("XAG/USD", 1.0),
+        "PL=F":          ("XPT/USD", 1.0),
+        "HG=F":          ("COPPER",  1.0),
+        "GOLDBEES.NS":   (None, 1.0),      # Yahoo only — NSE ETF
+        "SILVERBEES.NS": (None, 1.0),      # Yahoo only — NSE ETF
+    }
+    td_entry = TD_METALS.get(symbol, (None, 1.0))
+    td_sym, conversion = td_entry
+
+    # ── Try Twelve Data ────────────────────────────────────
+    if td_sym:
+        try:
+            df = _td_timeseries(td_sym, outputsize=400)
+            cp, r1d, r7d, r30d, r1y = _calc_returns_from_df(df)
+            w52h, w52l, rng_pct = _calc_52w(df)
+            sma50  = _calc_sma(df, 50)
+            sma200 = _calc_sma(df, 200)
+            trend  = "↑ Uptrend" if sma200 and cp>sma200 else "↓ Downtrend" if sma200 else "N/A"
+            # Apply unit conversion (e.g. per oz → per 10g)
+            cp_display   = round(cp * conversion, 2)
+            w52h_display = round(w52h * conversion, 2)
+            w52l_display = round(w52l * conversion, 2)
+            return dict(
+                name=name, ticker=symbol, error=None,
+                source="TwelveData (real-time)",
+                price=cp_display,
+                ret_1d=r1d, ret_7d=r7d, ret_30d=r30d, ret_1y=r1y,
+                w52h=w52h_display, w52l=w52l_display, rng_pct=rng_pct,
+                sma50=round(sma50*conversion,2) if sma50 else None,
+                sma200=round(sma200*conversion,2) if sma200 else None,
+                trend=trend,
+            )
+        except Exception:
+            pass  # fall through to Yahoo
+
+    # ── Yahoo fallback ─────────────────────────────────────
     try:
         tk   = yf.Ticker(symbol)
         hist = tk.history(period="1y")
         if len(hist) < 2:
             return dict(name=name, ticker=symbol, error="No data")
-
         cp    = float(hist["Close"].iloc[-1])
         p_1d  = float(hist["Close"].iloc[-2])
         p_7d  = float(hist["Close"].iloc[-8])  if len(hist)>=8  else cp
         p_30d = float(hist["Close"].iloc[-31]) if len(hist)>=31 else cp
         p_1y  = float(hist["Close"].iloc[0])
-
-        ret_1d  = round((cp-p_1d) /p_1d *100, 2)
-        ret_7d  = round((cp-p_7d) /p_7d *100, 2)
-        ret_30d = round((cp-p_30d)/p_30d*100, 2)
-        ret_1y  = round((cp-p_1y) /p_1y *100, 2)
-
-        w52h = float(hist["High"].max())
-        w52l = float(hist["Low"].min())
+        def r(a,b): return round((a-b)/b*100,2) if b else 0
+        w52h = float(hist["High"].max()); w52l = float(hist["Low"].min())
         rng_pct = round((cp-w52l)/(w52h-w52l)*100,1) if (w52h-w52l)>0 else 50
-
-        # SMA trend
         sma50  = float(hist["Close"].rolling(50).mean().iloc[-1])  if len(hist)>=50  else None
         sma200 = float(hist["Close"].rolling(200).mean().iloc[-1]) if len(hist)>=200 else None
         trend  = "↑ Uptrend" if sma200 and cp>sma200 else "↓ Downtrend" if sma200 else "N/A"
-
         return dict(
             name=name, ticker=symbol, error=None,
+            source="Yahoo (15min delay)",
             price=round(cp,2),
-            ret_1d=ret_1d, ret_7d=ret_7d, ret_30d=ret_30d, ret_1y=ret_1y,
+            ret_1d=r(cp,p_1d), ret_7d=r(cp,p_7d),
+            ret_30d=r(cp,p_30d), ret_1y=r(cp,p_1y),
             w52h=round(w52h,2), w52l=round(w52l,2), rng_pct=rng_pct,
             sma50=round(sma50,2) if sma50 else None,
             sma200=round(sma200,2) if sma200 else None,
@@ -683,37 +812,56 @@ def fetch_metal(symbol: str, name: str) -> dict:
 
 
 # ─────────────────────────────────────────────────────────────
-# 5. FOREX DATA FETCH
+# 5. FOREX DATA FETCH  — Twelve Data primary, Yahoo fallback
 # ─────────────────────────────────────────────────────────────
 def fetch_forex(symbol: str, name: str) -> dict:
+    # Convert Yahoo forex symbols to Twelve Data format
+    # USDINR=X → USD/INR,  EURUSD=X → EUR/USD
+    td_sym = symbol.replace("=X","")
+    if len(td_sym) == 6:
+        td_sym = td_sym[:3] + "/" + td_sym[3:]
+
+    # ── Try Twelve Data ────────────────────────────────────
+    try:
+        df = _td_timeseries(td_sym, outputsize=400)
+        cp, r1d, r7d, r30d, r1y = _calc_returns_from_df(df)
+        w52h, w52l, rng_pct = _calc_52w(df)
+        sma200 = _calc_sma(df, 200)
+        trend  = "↑ Strong" if sma200 and cp>sma200 else "↓ Weak" if sma200 else "N/A"
+        return dict(
+            name=name, ticker=symbol, error=None,
+            source="TwelveData (real-time)",
+            rate=round(cp,4),
+            ret_1d=r1d, ret_7d=r7d, ret_30d=r30d, ret_1y=r1y,
+            w52h=round(w52h,4), w52l=round(w52l,4), rng_pct=rng_pct,
+            sma200=round(sma200,4) if sma200 else None,
+            trend=trend,
+        )
+    except Exception:
+        pass  # fall through to Yahoo
+
+    # ── Yahoo fallback ─────────────────────────────────────
     try:
         tk   = yf.Ticker(symbol)
         hist = tk.history(period="1y")
         if len(hist) < 2:
             return dict(name=name, ticker=symbol, error="No data")
-
         cp    = float(hist["Close"].iloc[-1])
         p_1d  = float(hist["Close"].iloc[-2])
         p_7d  = float(hist["Close"].iloc[-8])  if len(hist)>=8  else cp
         p_30d = float(hist["Close"].iloc[-31]) if len(hist)>=31 else cp
         p_1y  = float(hist["Close"].iloc[0])
-
-        ret_1d  = round((cp-p_1d) /p_1d *100, 2)
-        ret_7d  = round((cp-p_7d) /p_7d *100, 2)
-        ret_30d = round((cp-p_30d)/p_30d*100, 2)
-        ret_1y  = round((cp-p_1y) /p_1y *100, 2)
-
-        w52h = float(hist["High"].max())
-        w52l = float(hist["Low"].min())
+        def r(a,b): return round((a-b)/b*100,2) if b else 0
+        w52h = float(hist["High"].max()); w52l = float(hist["Low"].min())
         rng_pct = round((cp-w52l)/(w52h-w52l)*100,1) if (w52h-w52l)>0 else 50
-
         sma200 = float(hist["Close"].rolling(200).mean().iloc[-1]) if len(hist)>=200 else None
         trend  = "↑ Strong" if sma200 and cp>sma200 else "↓ Weak" if sma200 else "N/A"
-
         return dict(
             name=name, ticker=symbol, error=None,
+            source="Yahoo (15min delay)",
             rate=round(cp,4),
-            ret_1d=ret_1d, ret_7d=ret_7d, ret_30d=ret_30d, ret_1y=ret_1y,
+            ret_1d=r(cp,p_1d), ret_7d=r(cp,p_7d),
+            ret_30d=r(cp,p_30d), ret_1y=r(cp,p_1y),
             w52h=round(w52h,4), w52l=round(w52l,4), rng_pct=rng_pct,
             sma200=round(sma200,4) if sma200 else None,
             trend=trend,
@@ -822,8 +970,10 @@ def show_fundamentals(results, title="NIFTY 50"):
 # 8. DISPLAY: CRYPTO TABLE
 # ─────────────────────────────────────────────────────────────
 def show_crypto(results):
+    src = results[0].get("source","") if results else ""
+    src_tag = f" — [green]TwelveData ⚡ real-time[/green]" if "Twelve" in src else " — [yellow]Yahoo 15min delay[/yellow]"
     tbl = Table(
-        title=f"🪙 Crypto Monitor  {datetime.now():%d %b %Y %H:%M}",
+        title=f"🪙 Crypto Monitor  {datetime.now():%d %b %Y %H:%M}{src_tag}",
         box=box.ROUNDED, show_lines=True,
         header_style="bold magenta", title_style="bold white on dark_blue",
     )
@@ -861,18 +1011,62 @@ def show_crypto(results):
 # ─────────────────────────────────────────────────────────────
 # 9. DISPLAY: METALS TABLE
 # ─────────────────────────────────────────────────────────────
+def fetch_tanishq_rates() -> dict:
+    """
+    Calculate Tanishq-equivalent gold rates from live spot price.
+    Uses XAU/USD from Twelve Data + USD/INR for accurate INR conversion.
+    Applies India import duty (15%) + GST (3%) to match retail rates.
+    """
+    try:
+        gold_data  = _td_get("quote", {"symbol": "XAU/USD"})
+        forex_data = _td_get("quote", {"symbol": "USD/INR"})
+
+        gold_usd_oz = float(gold_data.get("close", 0))
+        usdinr      = float(forex_data.get("close", 84.5))
+
+        if not gold_usd_oz:
+            raise ValueError("No gold price")
+
+        # 1 troy oz = 31.1035 grams
+        # India retail gold price = spot × (1 + import_duty) × (1 + gst)
+        # Import duty ~15%, GST 3% on gold value
+        spot_inr_gram = (gold_usd_oz * usdinr) / 31.1035
+        retail_factor = 1.15 * 1.03   # import duty + GST on metal value
+
+        base = spot_inr_gram * retail_factor
+
+        # Purity factors
+        g24 = round(base * 1.000)   # 99.9% pure
+        g22 = round(base * 0.916)   # 91.6% pure
+        g18 = round(base * 0.750)   # 75.0% pure
+
+        return {
+            "24k_per_gram": g24, "24k_per_10g": g24*10,
+            "22k_per_gram": g22, "22k_per_10g": g22*10,
+            "18k_per_gram": g18, "18k_per_10g": g18*10,
+            "gold_usd_oz":  round(gold_usd_oz, 2),
+            "usdinr":       round(usdinr, 2),
+            "source": f"Calculated: XAU/USD ${gold_usd_oz:.0f} × ₹{usdinr:.1f}/$ + 15% duty + 3% GST",
+        }
+    except Exception as e:
+        return {"source": f"unavailable ({str(e)[:50]})"}
+
+
 def show_metals(results):
+    src = results[0].get("source","") if results else ""
+    src_tag = f" — [green]TwelveData ⚡ real-time[/green]" if "Twelve" in src else " — [yellow]Yahoo 15min delay[/yellow]"
     tbl = Table(
-        title=f"🥇 Metals Monitor  {datetime.now():%d %b %Y %H:%M}",
+        title=f"🥇 Metals Monitor  {datetime.now():%d %b %Y %H:%M}{src_tag}",
         box=box.ROUNDED, show_lines=True,
         header_style="bold yellow", title_style="bold white on dark_blue",
     )
     for c,w,j in [
-        ("Metal",14,"left"),  ("Price",12,"right"),
-        ("1D %",7,"right"),   ("7D %",7,"right"),
-        ("30D %",8,"right"),  ("1Y %",8,"right"),
-        ("52W Low",10,"right"),("52W High",10,"right"),
-        ("52W Pos",10,"center"),("Trend",12,"center"),
+        ("Metal",16,"left"),      ("Price",14,"right"),
+        ("Per 10g ₹",12,"right"), ("1D %",7,"right"),
+        ("7D %",7,"right"),       ("30D %",8,"right"),
+        ("1Y %",8,"right"),       ("52W Low",10,"right"),
+        ("52W High",10,"right"),  ("52W Pos",10,"center"),
+        ("Trend",12,"center"),
     ]:
         tbl.add_column(c, width=w, justify=j)
 
@@ -880,29 +1074,100 @@ def show_metals(results):
         if v is None: return "[dim]N/A[/dim]"
         return f"[green]+{v}%[/green]" if v>0 else f"[red]{v}%[/red]"
 
+    # Fetch USD/INR for per-10g INR conversion of USD metals
+    try:
+        fx = _td_get("quote", {"symbol": "USD/INR"})
+        usdinr = float(fx.get("close", 84.5))
+    except Exception:
+        usdinr = 84.5
+
     for d in [r for r in results if not r.get("error")]:
-        rp = d["rng_pct"]
+        rp    = d["rng_pct"]
         rng_s = f"[green]{rp}%[/green]" if rp<30 else f"[yellow]{rp}%[/yellow]" if rp<70 else f"[red]{rp}%[/red]"
         trend = d.get("trend","N/A")
-        tc = "green" if "Up" in trend else "red" if "Down" in trend else "dim"
+        tc    = "green" if "Up" in trend else "red" if "Down" in trend else "dim"
+
+        price = d["price"]
+        name  = d["name"]
+
+        # Calculate per-10g price
+        if "USD" in name:
+            # price is per troy oz in USD → convert to per 10g in INR
+            per10g_inr = round(price / 31.1035 * 10 * usdinr)
+            per10g_str = f"₹{per10g_inr:,}"
+            price_str  = f"${price}"
+        elif "INR" in name:
+            # ETF unit price — per10g not meaningful
+            per10g_str = "[dim]ETF unit[/dim]"
+            price_str  = f"₹{price}"
+        else:
+            # Platinum/Copper in USD per oz/lb
+            per10g_str = "[dim]N/A[/dim]"
+            price_str  = f"${price}"
+
         tbl.add_row(
-            d["name"], str(d["price"]),
+            name, price_str, per10g_str,
             pct(d.get("ret_1d")), pct(d.get("ret_7d")),
             pct(d.get("ret_30d")), pct(d.get("ret_1y")),
             str(d["w52l"]), str(d["w52h"]), rng_s,
             f"[{tc}]{trend}[/{tc}]",
         )
     for d in [r for r in results if r.get("error")]:
-        tbl.add_row(d["name"],"—","—","—","—","—","—","—","—","[red]ERR[/red]")
+        tbl.add_row(d["name"],"—","—","—","—","—","—","—","—","—","[red]ERR[/red]")
     console.print(tbl)
+
+    # ── Tanishq Gold Rates Panel ──────────────────────────
+    console.print("\n[bold yellow]Fetching Tanishq gold rates...[/bold yellow]")
+    tj = fetch_tanishq_rates()
+    if tj.get("24k_per_gram"):
+        tj_tbl = Table(
+            title=f"🏅 Tanishq Gold Rates — {datetime.now():%d %b %Y %H:%M}  "
+                  f"[dim]({tj.get('source','')})[/dim]",
+            box=box.ROUNDED, show_lines=True,
+            header_style="bold yellow", title_style="bold white on dark_blue",
+        )
+        tj_tbl.add_column("Purity",       style="bold white", width=10)
+        tj_tbl.add_column("Per Gram ₹",   justify="right",    width=14)
+        tj_tbl.add_column("Per 10g ₹",    justify="right",    width=16)
+        tj_tbl.add_column("Per 100g ₹",   justify="right",    width=16)
+        tj_tbl.add_column("Note",                             width=30)
+
+        notes = {
+            "24K": "Investment / coins (99.9% pure)",
+            "22K": "Standard jewellery (91.6% pure)",
+            "18K": "Studded / light jewellery (75%)",
+        }
+        for k, label in [("24","24K"),("22","22K"),("18","18K")]:
+            pg  = tj.get(f"{k}k_per_gram", 0)
+            p10 = tj.get(f"{k}k_per_10g",  0)
+            p100 = pg * 100
+            tj_tbl.add_row(
+                f"[gold1]{label}[/gold1]",
+                f"[gold1]₹{pg:,}[/gold1]",
+                f"[gold1]₹{p10:,}[/gold1]",
+                f"[gold1]₹{p100:,}[/gold1]",
+                f"[dim]{notes[label]}[/dim]",
+            )
+        tj_tbl.add_row(
+            "[dim]Note[/dim]",
+            "[dim]excl. GST[/dim]",
+            "[dim]+ making[/dim]",
+            "[dim]charges[/dim]",
+            "[dim]+3% GST on final bill[/dim]",
+        )
+        console.print(tj_tbl)
+    else:
+        console.print("[red]Tanishq rates unavailable[/red]")
 
 
 # ─────────────────────────────────────────────────────────────
 # 10. DISPLAY: FOREX TABLE
 # ─────────────────────────────────────────────────────────────
 def show_forex(results):
+    src = results[0].get("source","") if results else ""
+    src_tag = f" — [green]TwelveData ⚡ real-time[/green]" if "Twelve" in src else " — [yellow]Yahoo 15min delay[/yellow]"
     tbl = Table(
-        title=f"💱 Forex Monitor — vs USD  {datetime.now():%d %b %Y %H:%M}",
+        title=f"💱 Forex Monitor — vs USD  {datetime.now():%d %b %Y %H:%M}{src_tag}",
         box=box.ROUNDED, show_lines=True,
         header_style="bold cyan", title_style="bold white on dark_blue",
     )
@@ -1107,7 +1372,7 @@ def show_alerts(results):
 # 14. CSV EXPORT
 # ─────────────────────────────────────────────────────────────
 def export_csv(results, prefix="nifty"):
-    fn = f"{prefix}_scan_{datetime.now():%Y%m%d_%H%M}.csv"
+    import os; DATA_DIR = os.path.expanduser("~/Data/niftyMonitor"); os.makedirs(DATA_DIR, exist_ok=True); fn = os.path.join(DATA_DIR, f"{prefix}_scan_{datetime.now():%Y%m%d_%H%M}.csv")
     fields = ["name","ticker","sector","price","score","signal",
               "pe","pb","roe","net_margin","gross_margin","de","cur_ratio",
               "rev_gr","earn_gr","fcf_cr","div_yld","insider","inst",
@@ -1123,7 +1388,7 @@ def export_csv(results, prefix="nifty"):
 
 
 def export_generic_csv(results, fields, prefix):
-    fn = f"{prefix}_{datetime.now():%Y%m%d_%H%M}.csv"
+    DATA_DIR = os.path.expanduser("~/Data/niftyMonitor"); os.makedirs(DATA_DIR, exist_ok=True); fn = os.path.join(DATA_DIR, f"{prefix}_{datetime.now():%Y%m%d_%H%M}.csv")
     with open(fn,"w",newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
         w.writeheader()

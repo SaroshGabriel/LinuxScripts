@@ -1,0 +1,150 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 35,
+    "spacing": 4,
+
+    "modules-left": ["hyprland/workspaces", "custom/spotify", "custom/terminal", "custom/launcher", "custom/screenshot", "custom/sysmon"],
+    "modules-center": ["custom/clock"],
+    "modules-right": ["custom/power", "pulseaudio", "network", "custom/netspeed", "bluetooth", "cpu", "memory", "temperature", "tray"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "persistent-workspaces": {
+            "HDMI-A-2": [1, 2, 3, 4, 5, 6],
+            "eDP-1": [11, 12, 13, 14, 15, 16]
+        },
+        "format-icons": {
+            "1": "፩", "2": "፪", "3": "፫", "4": "፬", "5": "፭", "6": "፮",
+            "11": "♔", "12": "♕", "13": "♖", "14": "♗", "15": "♘", "16": "♙",
+            "urgent": "",
+            "default": ""
+        }
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 40
+    },
+
+    "clock": {
+        "format": " {:%I:%M:%S %p  %A  %d %B %Y}",
+        "format-calendar": "<span color='#EF3946'><b>{}</b></span>",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "on-click": "yad --calendar --title='📅 Calendar' --no-buttons --fixed --undecorated"
+    },
+
+    "cpu": {
+        "format": "󰻠 {usage}%",
+        "tooltip": false,
+        "interval": 2
+    },
+
+    "memory": {
+        "format": "󰍛 {used:0.1f}G",
+        "interval": 2
+    },
+
+    "temperature": {
+        "hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input",
+        "critical-threshold": 80,
+        "format": "󰔏 {temperatureC}°C",
+        "format-critical": "󰔏 {temperatureC}°C"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+    "network": {
+        "format-wifi": "󰤨 {signalStrength}%",
+        "format-ethernet": "󰈀 Connected",
+        "format-disconnected": "󰤭 Disconnected",
+        "tooltip-format": "{ifname}: {ipaddr}",
+        "on-click": "networkmanager_dmenu"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝙 Muted",
+        "format-icons": {
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "custom/spotify": {
+        "exec": "playerctl metadata --format '󰎈 {{artist}} - {{title}}' 2>/dev/null || echo ''",
+        "interval": 3,
+        "format": "{}",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+        "max-length": 40
+    },
+
+    "custom/power": {
+        "format": "⏻",
+        "on-click": "/home/KJ/.config/rofi/powermenu.sh",
+        "tooltip": false
+    },
+
+    "custom/netspeed": {
+        "exec": "/home/KJ/.config/waybar/netspeed.sh",
+        "interval": 2,
+        "format": "{}",
+        "tooltip": false
+    },
+
+    "bluetooth": {
+        "format": "󰂯",
+        "format-connected": "󰂱 {device_alias}",
+        "format-off": "󰂲",
+        "on-click": "blueman-manager",
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected"
+    },
+
+    "custom/clock": {
+        "exec": "~/.config/waybar/clock.sh",
+        "interval": 1,
+        "return-type": "json",
+        "format": "{}",
+        "tooltip": false,
+        "on-click": "brave --new-window https://calendar.google.com"
+    },
+
+    "custom/terminal": {
+        "format": "💻",
+        "on-click": "kitty",
+        "tooltip": false
+    },
+
+    "custom/launcher": {
+        "format": "🚀",
+        "on-click": "rofi -show drun",
+        "tooltip": false
+    },
+
+    "custom/screenshot": {
+        "format": "📸",
+        "on-click": "hyprshot -m region --clipboard-only",
+        "tooltip": false
+    },
+
+    "custom/sysmon": {
+        "format": "📊",
+        "on-click": "kitty -e btop",
+        "tooltip": false
+    },
+
+    "tray": {
+        "spacing": 10
+    }
+}

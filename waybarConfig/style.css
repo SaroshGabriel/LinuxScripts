@@ -1,567 +1,133 @@
 * {
-	border: none;
-	border-radius: 10px;
-    font-family: "JetBrainsMono Nerd Font", "Noto Sans CJK JP";
-	font-size: 15px;
-	min-height: 10px;
-}
-window#waybar {
-	background: transparent;
-}
-#network {
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
-#keyboard-state{
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;    
-}
-#keyboard-state:hover{
-    color: #32111C; 
-    background: #EF3946;
-}
-#network:hover { 
-    color: #32111C;
-    background: #EF3946;
-}
-#custom-keybinds {
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    color: #FEE5E4;
-    background: #32111C;
-    transition: 0.3s;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-}
-#custom-keybinds:hover { 
-    background: #EF3946;
-    color: #32111C;
-}
-#cava{
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s; 
-}
-#cava:hover{
-    color: #32111C;
-    background: #EF3946;
-}
-#battery{
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s; 
-}
-#battery:hover{
-    color: #32111C;
-    background: #EF3946;
-}
-#backlight:hover{
-    color: #32111C;
-    background: #EF3946;
-}
-#backlight{
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s; 
-}
-
-
-#language{
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
-#language:hover{
-    color: #32111C; 
-    background: #EF3946; 
-}
-#pulseaudio {
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    padding: 8px;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
-#pulseaudio:hover{ 
-    background: #EF3946;
-    color: #32111C;
-}
-#pulseaudio.muted {
-    color: #FEE5E4;
-    background: #32111C; 
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
-#pulseaudio.muted:hover {
-    background: #EF3946;
-    color: #32111C; 
-
-}
-#clock {
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
-#clock:hover {
-    color: #32111C; 
-    background: #EF3946;
-}
-#disk{
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
-#disk:hover{
-    color: #32111C; 
-    background: #EF3946;
-}
-#privacy{
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
-#idle_inhibitor{
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
-#idle_inhibitor.activated{
-    color: #FEE5E4;
-    border-color: #EF3946;
-}
-#idle_inhibitor.activated:hover{
-    background: #EF3946;
-    color: #32111C;
-    border-color: #EF3946;
-}
-#idle_inhibitor.deactivated{
-    color: #FEE5E4
-}
-#idle_inhibitor.deactivated:hover{
-    color: #32111C; 
-    background: #EF3946;
-}
-#memory {
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    margin-bottom: 0px;
-    padding-right: 10px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
-#memory:hover { 
-    color: #32111C; 
-    background: #EF3946;
-
-}
-#cpu {
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    margin-bottom: 0px;
-    padding-right: 10px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
-#cpu:hover {
-    color: #32111C; 
-    background: #EF3946;
-
-}
-#custom-launcher {
-    font-size: 20px;
-    margin-top: 10px;
-    margin-left: 17px;
-    padding-left: 10px;
-    padding-right: 5px;
-    border-radius: 10px;
-    transition: none;
-    color: #FEE5E4;
-    background: #32111C;
-    transition: 0.3s;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-}
-#custom-launcher:hover { 
-    background: #EF3946;
-    color: #32111C;
-}
-#network.disconnected {
-    color: #FEE5E4;
-    background: #32111C; 
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-}
-#network.disconnected:hover {
-    background: #EF3946;
-    color: #32111C; 
-}
-#custom-power {
-    font-size: 15px;
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-left: 10px;
-    padding-right: 5px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
-#custom-power:hover {
-    background: #EF3946;
-    color: #32111C;
-    border-color: #EF3946;
-
-}
-#workspaces {
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-right: 4px;
-    background: #32111C; 
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    color: #FEE5E4;
-    transition: 0.3s;
-}
-
-#workspaces button {
-    color: #FEE5E4;
-    transition: 0.3s;
-}
-#workspaces button:hover {
-    background: transparent;
-    color: transparent;
-    box-shadow: none;
-    text-shadow: none;
-}
-#tray{
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
-#tray menu{
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
-#temperature {
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
-
-#temperature:hover {
-    color: #32111C;
-    background: #EF3946;
-}
-
-#temperature.critical {
-    background: #EF3946;
-    color: #32111C;
-}
-
-#custom-gpu {
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
-
-#custom-gpu:hover {
-    color: #32111C;
-    background: #EF3946;
-}
-
-#custom-spotify {
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    transition: none;
-    background: #32111C; 
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
-
-#custom-spotify:hover {
-    color: #32111C;
-    background: #EF3946;
-}
-
-#workspaces button label {
-    font-family: "Noto Sans CJK JP";
-    font-size: 14px;
-}
-
-#workspaces button {
-    color: #FEE5E4;
-    font-family: "Noto Sans CJK JP";
+    font-family: JetBrainsMono Nerd Font;
     font-size: 16px;
-    padding: 0 8px;
+    min-height: 0;
+}
+
+window#waybar {
     background: transparent;
     border: none;
+}
+
+/* Left container - workspaces */
+#workspaces {
+    background: rgba(10, 10, 20, 0.9);
+    border: 1px solid rgba(239, 57, 70, 0.4);
+    border-radius: 12px;
+    margin: 6px 0 6px 8px;
+    padding: 0 6px;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: #ffffff;
+    border-radius: 8px;
+    margin: 2px;
+    font-size: 19px;
+    background: transparent;
 }
 
 #workspaces button.active {
     color: #EF3946;
-    border-bottom: 3px solid #EF3946;
+    background: rgba(239, 57, 70, 0.2);
+    border-bottom: 2px solid #EF3946;
 }
 
-#custom-ip {
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    background: #32111C;
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
+#workspaces button:hover {
+    background: rgba(239, 57, 70, 0.1);
+    color: #ff6b6b;
 }
 
-#custom-uptime {
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    background: #32111C;
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
+/* Center container - clock */
 
-#network.speed {
-    min-width: 200px;
-    font-family: "JetBrainsMono Nerd Font";
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    background: #32111C;
-    color: #FEE5E4;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #EF3946;
-    transition: 0.3s;
-}
 
-#workspaces {
-    background: #32111C;
-    border-bottom: 3px solid #EF3946;
-    border-radius: 10px;
-    margin-top: 10px;
-    padding: 0 5px;
-}
-
-#workspaces button {
-    color: #FEE5E4;
-    font-family: "Noto Sans CJK JP";
-    font-size: 16px;
-    padding: 0 8px;
+/* Right container - all modules */
+#custom-power,
+#custom-spotify,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#temperature,
+#battery,
+#tray {
     background: transparent;
-    border: none;
-    border-radius: 0;
+    color: #ffffff;
+    padding: 0 8px;
 }
 
-#workspaces button.active {
+.modules-right {
+    background: rgba(10, 10, 20, 0.9);
+    border: 1px solid rgba(239, 57, 70, 0.4);
+    border-radius: 12px;
+    margin: 6px 8px 6px 0;
+    padding: 0 4px;
+}
+
+#custom-power {
+    color: #EF3946;
+    font-size: 16px;
+    padding: 0 12px;
+}
+
+#custom-power:hover {
+    background: rgba(239, 57, 70, 0.3);
+    border-radius: 8px;
+}
+
+#cpu { color: #ff6b6b; }
+#memory { color: #EF3946; }
+#temperature { color: #ffaa00; }
+#temperature.critical { color: #ff0000; background: rgba(255,0,0,0.2); border-radius: 8px; }
+#battery { color: #EF3946; }
+#battery.warning { color: #ffaa00; }
+#battery.critical { color: #ff0000; animation: blink 1s infinite; }
+#network { color: #ff6b6b; }
+#pulseaudio { color: #EF3946; }
+#pulseaudio.muted { color: #444466; }
+#custom-spotify { color: #ffffff; font-style: italic; }
+#tray { padding: 0 8px; }
+
+@keyframes blink {
+    to { opacity: 0.3; }
+}
+
+#bluetooth {
+    color: #6b9fff;
+    padding: 0 8px;
+}
+
+#bluetooth.connected {
+    color: #6b9fff;
+}
+
+#bluetooth.off {
+    color: #444466;
+}
+
+#custom-netspeed {
+    color: #50fa7b;
+    padding: 0 8px;
+    font-size: 12px;
+}
+
+
+
+#clock {
+    background: rgba(10, 10, 20, 0.9);
+    border: 1px solid rgba(239, 57, 70, 0.4);
+    border-radius: 12px;
+    margin: 6px 0;
+    padding: 0 16px;
     color: #EF3946;
     font-weight: bold;
 }
 
-#workspaces button.urgent {
-    color: #EF3946;
-    background: #32111C;
+#workspaces button {
+    padding: 0 8px;
+    color: #ffffff;
+    border-radius: 8px;
+    margin: 2px;
+    font-size: 19px;
+    background: transparent;
 }
