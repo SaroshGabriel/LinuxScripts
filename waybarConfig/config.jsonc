@@ -4,7 +4,7 @@
     "height": 35,
     "spacing": 4,
 
-    "modules-left": ["hyprland/workspaces", "custom/spotify", "custom/terminal", "custom/launcher", "custom/screenshot", "custom/sysmon"],
+    "modules-left": ["hyprland/workspaces", "custom/terminal", "custom/launcher", "custom/screenshot", "custom/sysmon"],
     "modules-center": ["custom/clock"],
     "modules-right": ["custom/power", "pulseaudio", "network", "custom/netspeed", "bluetooth", "cpu", "memory", "temperature", "tray"],
 
@@ -78,9 +78,7 @@
             "default": ["󰕿", "󰖀", "󰕾"]
         },
         "on-click": "pavucontrol"
-    },
-
-    "custom/spotify": {
+    }: {
         "exec": "playerctl metadata --format '󰎈 {{artist}} - {{title}}' 2>/dev/null || echo ''",
         "interval": 3,
         "format": "{}",

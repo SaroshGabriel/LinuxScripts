@@ -43,7 +43,6 @@ window#waybar {
 
 /* Right container - all modules */
 #custom-power,
-#custom-spotify,
 #pulseaudio,
 #network,
 #cpu,
@@ -85,7 +84,7 @@ window#waybar {
 #network { color: #ff6b6b; }
 #pulseaudio { color: #EF3946; }
 #pulseaudio.muted { color: #444466; }
-#custom-spotify { color: #ffffff; font-style: italic; }
+
 #tray { padding: 0 8px; }
 
 @keyframes blink {
