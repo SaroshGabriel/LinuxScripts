@@ -1371,28 +1371,53 @@ def show_alerts(results):
 # ─────────────────────────────────────────────────────────────
 # 14. CSV EXPORT
 # ─────────────────────────────────────────────────────────────
+def _atomic_write_csv(write_fn, glob_pattern, fn):
+    # Write via tempfile; if identical to most recent matching CSV, discard and skip.
+    import os, glob, filecmp, tempfile
+    DATA_DIR = os.path.dirname(fn)
+    fd, tmp_fn = tempfile.mkstemp(prefix=".tmp_", suffix=".csv", dir=DATA_DIR)
+    os.close(fd)
+    with open(tmp_fn, "w", newline="") as f:
+        write_fn(f)
+    existing = sorted(glob.glob(os.path.join(DATA_DIR, glob_pattern)))
+    if existing and filecmp.cmp(tmp_fn, existing[-1], shallow=False):
+        os.unlink(tmp_fn)
+        console.print(f"[yellow]≡ Skipped (identical to {os.path.basename(existing[-1])})[/yellow]")
+        return None
+    os.rename(tmp_fn, fn)
+    console.print(f"\n[green]✓ Exported →[/green] [bold]{fn}[/bold]")
+    return fn
+
+
 def export_csv(results, prefix="nifty"):
-    import os; DATA_DIR = os.path.expanduser("~/Data/niftyMonitor"); os.makedirs(DATA_DIR, exist_ok=True); fn = os.path.join(DATA_DIR, f"{prefix}_scan_{datetime.now():%Y%m%d_%H%M}.csv")
+    import os
+    DATA_DIR = os.path.expanduser("~/Data/niftyMonitor")
+    os.makedirs(DATA_DIR, exist_ok=True)
+    fn = os.path.join(DATA_DIR, f"{prefix}_scan_{datetime.now():%Y%m%d_%H%M}.csv")
     fields = ["name","ticker","sector","price","score","signal",
               "pe","pb","roe","net_margin","gross_margin","de","cur_ratio",
               "rev_gr","earn_gr","fcf_cr","div_yld","insider","inst",
               "ann_ret","w52h","w52l","market_cap_cr"]
-    with open(fn,"w",newline="") as f:
+    def _write(f):
         w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
         w.writeheader()
         for r in results:
             row = dict(r)
             row["signal"] = sig(r.get("score",0))[0] if not r.get("error") else "ERROR"
             w.writerow(row)
-    console.print(f"\n[green]✓ Exported →[/green] [bold]{fn}[/bold]")
+    _atomic_write_csv(_write, f"{prefix}_scan_*.csv", fn)
 
 
 def export_generic_csv(results, fields, prefix):
-    DATA_DIR = os.path.expanduser("~/Data/niftyMonitor"); os.makedirs(DATA_DIR, exist_ok=True); fn = os.path.join(DATA_DIR, f"{prefix}_{datetime.now():%Y%m%d_%H%M}.csv")
-    with open(fn,"w",newline="") as f:
+    import os
+    DATA_DIR = os.path.expanduser("~/Data/niftyMonitor")
+    os.makedirs(DATA_DIR, exist_ok=True)
+    fn = os.path.join(DATA_DIR, f"{prefix}_{datetime.now():%Y%m%d_%H%M}.csv")
+    def _write(f):
         w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
         w.writeheader()
         for r in results: w.writerow(r)
+    _atomic_write_csv(_write, f"{prefix}_*.csv", fn)
     console.print(f"\n[green]✓ Exported →[/green] [bold]{fn}[/bold]")
 
 
