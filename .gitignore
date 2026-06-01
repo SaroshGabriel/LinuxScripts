@@ -1,2 +1,4 @@
 niftyMonitor/*.csv
 niftyMonitor/scan_log.txt
+__pycache__/
+*.pyc

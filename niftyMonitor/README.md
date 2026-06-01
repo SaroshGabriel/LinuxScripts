@@ -1,129 +1,106 @@
-# 📊 NIFTY 50 Stock Research Monitor
-### Automated Fundamental Analysis for Arch Linux
+# niftyMonitor — Market Research Monitor
+
+> A terminal market-research scanner: scores Indian equities on fundamentals and
+> flags **BUY / WATCH / AVOID**, with crypto, metals, and forex thrown in.
+> `v3.0`.
+
+A Python CLI that pulls quotes and fundamentals, scores each stock across 8
+parameters out of 100, and prints colour-coded signals in a rich terminal table.
+Covers the NIFTY 50 plus **27 sectors (~270 stocks)**, and extends to crypto,
+precious metals, forex, and US stocks.
 
 ---
 
-## What This Does
+## What It Scans
 
-Continuously monitors all 50 NIFTY 50 companies and scores each one
-across 8 fundamental parameters. Gives you a clear **BUY / WATCH / AVOID**
-signal for each stock, so you can research like a proper analyst.
+| Mode | Flag | Covers |
+|------|------|--------|
+| NIFTY 50 fundamental scan | _(default)_ | All 50 NIFTY companies, scored + signalled |
+| Sector scan | `--sectorscan` | 27 sectors × ~10 stocks (~270 names) |
+| Single sector | `--sector IT` | One sector's stocks (`--listsectors` to enumerate) |
+| Single-stock deep dive | `--stock RELIANCE` | Full breakdown for one ticker |
+| Price levels | `--levels` | Support/resistance levels for NIFTY 50 |
+| Crypto | `--crypto` | BTC, ETH, and top crypto |
+| Metals | `--metals` | Gold & silver (INR + USD) |
+| Forex | `--forex` | Top currencies vs USD |
+| US stocks | `--usstocks` | US equities |
+| Everything | `--all` | All of the above in one run |
 
----
-
-## Scoring System (100 pts total)
-
-| Parameter         | Max Score | What's "Good"            |
-|-------------------|-----------|--------------------------|
-| ROE               | 20 pts    | > 15%                    |
-| Debt/Equity       | 15 pts    | < 1.0                    |
-| P/E Ratio         | 15 pts    | < 20 = cheap, < 35 = fair|
-| Net Profit Margin | 15 pts    | > 15%                    |
-| Revenue Growth    | 15 pts    | > 15% YoY                |
-| Free Cash Flow    | 10 pts    | Must be positive         |
-| Promoter Holding  | 5 pts     | > 50% = high conviction  |
-| Dividend Yield    | 5 pts     | > 2% = bonus             |
-
-**Signals:**
-- 🟢 Score ≥ 70 → **BUY CANDIDATE** (research further before buying)
-- 🟡 Score 50–69 → **WATCHLIST** (monitor, not yet)
-- 🔴 Score < 50 → **AVOID**
+Output controls: `--alerts` (signals only), `--top N`, `--export` (timestamped
+CSV), `--watch` (auto-refresh), `--interval MIN`, `--listsectors`.
 
 ---
 
-## Setup (One Time)
+## Scoring (100 pts)
+
+| Parameter | Max | "Good" |
+|-----------|-----|--------|
+| ROE | 20 | > 15% |
+| Debt / Equity | 15 | < 1.0 |
+| P/E ratio | 15 | < 20 cheap, < 35 fair |
+| Net profit margin | 15 | > 15% |
+| Revenue growth | 15 | > 15% YoY |
+| Free cash flow | 10 | positive |
+| Promoter holding | 5 | > 50% |
+| Dividend yield | 5 | > 2% |
+
+**Signals:** score >= 70 -> BUY CANDIDATE · 50-69 -> WATCHLIST · < 50 -> AVOID.
+(The live terminal output uses green/amber/red indicators for these.)
+
+---
+
+## Setup
 
 ```bash
-cd ~/nifty_monitor
-chmod +x setup.sh
-./setup.sh
+cd niftyMonitor
+./setup.sh          # creates .venv, installs deps; optional systemd timer
 ```
 
-Optionally installs a **systemd timer** to auto-scan every 30 min.
+Optional — the crypto/metals/forex/US modes use **Twelve Data** as the primary
+source and fall back to Yahoo Finance. To enable them, drop a free API key at:
+
+```
+~/.config/stock_monitor/twelvedata_key
+```
+
+The key is read from that file at runtime — never hard-coded or committed.
+NIFTY/sector fundamentals work on Yahoo Finance alone, no key needed.
 
 ---
 
 ## Usage
 
 ```bash
-# Full NIFTY 50 scan with table + signals
-./run.sh
-
-# Watch mode — auto-refresh every 30 min in terminal
-./run.sh --watch
-
-# Deep dive on a single stock
-./run.sh --stock RELIANCE
-./run.sh --stock HDFCBANK
-./run.sh --stock TCS
-
-# Only show buy/watch/avoid signals (no full table)
-./run.sh --alerts
-
-# Export scan results to timestamped CSV
-./run.sh --export
-
-# Show only top 10 stocks by score
-./run.sh --top 10
-
-# Combine flags
-./run.sh --alerts --export
-./run.sh --top 15 --export
+./run.sh                       # NIFTY 50 scan with table + signals
+./run.sh --sectorscan          # all 27 sectors
+./run.sh --sector PHARMA       # one sector
+./run.sh --stock HDFCBANK      # single-stock deep dive
+./run.sh --alerts --export     # signals only, save to CSV
+./run.sh --top 15              # top 15 by score
+./run.sh --watch --interval 30 # auto-refresh every 30 min
+./run.sh --listsectors         # list sectors and their stocks
 ```
 
 ---
 
-## Adding Custom Stocks (Outside NIFTY 50)
+## Add Your Own Stocks / Tune Scoring
 
-Open `stock_monitor.py` and add to the `NIFTY50` dict:
-
-```python
-NIFTY50 = {
-    ...
-    "NIITLTD": "NIITLTD.NS",   # Your existing holding
-    "IRFC":    "IRFC.NS",
-}
-```
-
-Then run:
-```bash
-./run.sh --stock NIITLTD
-```
+Add tickers to the `NIFTY50` / `SECTORS` structures in `stock_monitor.py`
+(`"NIITLTD": "NIITLTD.NS"`), or adjust the `THRESHOLDS` dict to make the filters
+stricter (e.g. raise `score_buy` to 80, lower `pe_cheap`).
 
 ---
 
-## Adjusting Scoring Thresholds
+## Data & Limits
 
-Edit `THRESHOLDS` dict in `stock_monitor.py`:
-
-```python
-THRESHOLDS = {
-    "roe_good": 15.0,       # Increase for stricter ROE filter
-    "pe_cheap": 20.0,       # Lower for stricter valuation
-    "score_buy": 70,        # Raise to 80 to be more selective
-    ...
-}
-```
+- **Yahoo Finance** (`yfinance`) for equities; data is delayed ~15 min during
+  market hours, fundamentals are quarterly/annual.
+- **Twelve Data** free tier: 8 calls/min, 800/day — used for crypto/forex/metals.
 
 ---
 
-## Output Files
+## Disclaimer
 
-- `nifty_scan_YYYYMMDD_HHMM.csv` — exported scan results
-- `scan_log.txt` — systemd timer logs (if timer enabled)
-
----
-
-## Data Source
-
-Yahoo Finance via `yfinance` library. Data is delayed ~15 min during
-market hours. Fundamental data (ROE, margins, etc.) is quarterly/annual.
-
----
-
-## ⚠️ Disclaimer
-
-This tool is for **research and education only**. Signals are based on
-publicly available data and a simple scoring model. Always verify with
-Screener.in, company filings, and your own judgment before investing.
-**Never invest borrowed money in equities.**
+For **research and education only**. Signals come from public data and a simple
+scoring model — always verify against company filings and your own judgment
+before investing, and never invest borrowed money.
