@@ -30,8 +30,8 @@ fi
 # ── Configuration ────────────────────────────────────────────
 _MS_SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 _MS_ALIASES_CONF="$_MS_SCRIPT_DIR/aliases.conf"
-_MS_GITHUB_RAW_URL="https://raw.githubusercontent.com/SaroshGabriel/LinuxScripts/main/aliasSyncWithBashrc/aliases.conf"
-# ↑ Replace SaroshGabriel with your actual GitHub username before pushing
+_MS_GITHUB_RAW_URL="https://raw.githubusercontent.com/ChargeInMotion/LinuxScripts/main/aliasSyncWithBashrc/aliases.conf"
+# ↑ Replace ChargeInMotion with your actual GitHub username before pushing
 
 _MS_BASHRC="$HOME/.bashrc"
 _MS_SNAPSHOT="$HOME/.bashrc_ms_snapshot"
@@ -249,7 +249,7 @@ _ms_end() {
                 echo -e "  ${_MS_DIM}   aliases.conf updated locally. Push manually from your own machine.${_MS_RESET}"
                 _ms_log "git push skipped — decryption failed"
             else
-                git -C "$_MS_SCRIPT_DIR" remote set-url origin "https://${_MS_PAT}@github.com/SaroshGabriel/LinuxScripts.git"
+                git -C "$_MS_SCRIPT_DIR" remote set-url origin "https://${_MS_PAT}@github.com/ChargeInMotion/LinuxScripts.git"
                 git -C "$_MS_SCRIPT_DIR" push
                 if [ $? -eq 0 ]; then
                     echo -e "  ${_MS_GREEN}✅ aliases.conf pushed to git.${_MS_RESET}"
@@ -258,7 +258,7 @@ _ms_end() {
                     echo -e "  ${_MS_YELLOW}⚠️  git push failed. aliases.conf updated locally.${_MS_RESET}"
                     _ms_log "git push failed — local update only"
                 fi
-                git -C "$_MS_SCRIPT_DIR" remote set-url origin "https://github.com/SaroshGabriel/LinuxScripts.git"
+                git -C "$_MS_SCRIPT_DIR" remote set-url origin "https://github.com/ChargeInMotion/LinuxScripts.git"
                 unset _MS_PAT
             fi
         else

@@ -1,7 +1,7 @@
 #!/bin/bash
 # ============================================================
 # setupWorkspace.sh - Safe Workspace + GitHub Repo Setup
-# Author: KJ / SaroshGabriel
+# Author: KJ / ChargeInMotion
 # Version: 1.0
 #
 # Creates local directory structure and GitHub repos
@@ -20,7 +20,7 @@
 # ============================================================
 
 # ── Configuration ────────────────────────────────────────────
-GITHUB_USER="SaroshGabriel"
+GITHUB_USER="ChargeInMotion"
 LOG_FILE="$HOME/.workspace_setup.log"
 
 # ── Colors ───────────────────────────────────────────────────
@@ -134,7 +134,7 @@ safe_create_branch() {
 $desc
 
 ---
-*Part of SaroshGabriel/$( basename "$dir") repository*
+*Part of ChargeInMotion/$( basename "$dir") repository*
 EOF
     git -C "$dir" add README.md > /dev/null 2>&1
     git -C "$dir" commit -m "Initial $branch branch" > /dev/null 2>&1

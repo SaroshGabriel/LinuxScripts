@@ -64,4 +64,4 @@ One-shot bootstrap that creates the local workspace dirs and GitHub repos.
 
 ## Author
 
-**Sarosh (KJ)** · [github.com/SaroshGabriel](https://github.com/SaroshGabriel) · saroshjibreel@gmail.com
+**Sarosh (KJ)** · [github.com/ChargeInMotion](https://github.com/ChargeInMotion) · sarosh@chargeinmotion.dev
